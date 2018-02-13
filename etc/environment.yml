@@ -10,9 +10,9 @@
 # Webserver
 
 # General
-WEB_DOCUMENT_ROOT=/app/
+WEB_DOCUMENT_ROOT=/app/public/
 WEB_DOCUMENT_INDEX=index.php
-CLI_SCRIPT=php /app/index.php
+CLI_SCRIPT=php /app/public/index.php
 
 #######################################
 # PHP settings
@@ -59,20 +59,20 @@ SSH_AUTH_KEY=""
 #    because it's stored database in
 #    volume and provisioning is only
 #    done once.
-MYSQL_ROOT_PASSWORD=dev
+MYSQL_ROOT_PASSWORD=funk19
 MYSQL_USER=dev
 MYSQL_PASSWORD=dev
-MYSQL_DATABASE=database
+MYSQL_DATABASE=adminlte
 
 #######################################
 # PostgreSQL settings
-POSTGRES_USER=dev
-POSTGRES_PASSWORD=dev
-POSTGRES_DATABASE=dev
+#POSTGRES_USER=dev
+#POSTGRES_PASSWORD=dev
+#POSTGRES_DATABASE=dev
 
 #######################################
 # FTP settings
 FTP_USER=dev
 FTP_PASSWORD=dev
 FTP_PATH=/storage/ftp/
-#FTP_PATH=/app/
+FTP_PATH=/app/
